@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png" sizes="16x16" type="images/favicon.png">
+
+    <!--[if lt IE 9]>
+        <script src="https://static.hsstatic.net/content_shared_assets/static-1.3962/js/css3-mediaqueries.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <title>Caliber</title>
+    <link href="stylesheets/materialize.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600' rel='stylesheet' type='text/css'>
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/owl.carousel.css" rel="stylesheet" />
+    <link href="stylesheets/video-js.css" rel="stylesheet" />
+    <link href="stylesheets/style.css" rel="stylesheet" />
+
+    <link href="stylesheets/queryLoader.css" rel="stylesheet" />
+    <script type="text/javascript" src="javascripts/modernizr.custom.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-67013368-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!--<script type="text/javascript">
+    function loadingDivHide(){
+        document.getElementById("depreload ").style.display = "none";
+        document.getElementById("main").style.visibility = "";
+    }
+  </script>--> 
+</head>
+
+<body>
+
+    <div id="depreload" style="background: #000" class="table">
+        <div class="table-cell wrapper">
+            <div class="circle">
+                <canvas class="line" width="360px" height="360px"></canvas>
+                <!-- <img src="images/ca-logo.png" class="logo" alt="logo" /> -->
+                <span class="logo process-val">00%</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div id="preloader">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-green">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <ul id="slide-out" class="side-nav secondaryBg">
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!">About</a></li>
+        <li><a href="#!">Blog</a></li>
+        <li><a href="#!">Art of work</a></li>
+        <li><a href="#!">Pricing</a></li>
+        <li><a href="#!">Benefits</a></li>
+        <li><a href="#!">Team</a></li>
+        <li><a href="#!">Contact</a></li>
+    </ul>
+
+
+    <main id="main" class="col xs12 s12 m12 l12">
+        <header class="row skew-wrp">
+            <div id="nav-fixed" class="row">
+                
+                <!-- navigation start here -->
+                <div class="ca-invert-nav">
+                    <div class="ca-brand">
+                        <a href="index.html"><div class="logo uppercase primaryColor valign">Caliber <em></em></div></a>
+                    </div>
+                    <nav id="topLevel-menu">
+                        <ul class="top-menu hide-on-med-and-down">
+                            <li><a class="waves-effect" href="#pull-parallax">Home</a></li>
+                            <li><a class="waves-effect" href="#section2">About</a></li>
+                            <li><a class="waves-effect" href="#section3">Blog</a></li>
+                            <li><a class="waves-effect" href="#section4">Art of work</a></li>
+                            <li><a class="waves-effect" href="#section5">Pricing</a></li>
+                            <li><a class="waves-effect" href="#section6">Benefits</a></li>
+                            <li><a class="waves-effect" href="#section7">Team</a></li>
+                            <li><a class="waves-effect" href="#section8">Contact</a></li>
+                        </ul>
+
+                        <div id="invert-menu">
+                            <ul class="hide-on-med-and-down">
+                                <li><a class="waves-effect waves-yellow" href="#pull-parallax">Home</a></li>
+                                <li><a class="waves-effect waves-yellow" href="#section2">About</a></li>
+                                <li><a class="waves-effect waves-yellow" href="#section3">Blog</a></li>
+                                <li><a class="waves-effect waves-yellow" href="#section4">Art of work</a></li>
+                                <li><a class="waves-effect waves-yellow" href="#section5">Pricing</a></li>
+                                <li><a class="waves-effect waves-yellow" href="#section6">Benefits</a></li>
+                                <li><a class="waves-effect waves-yellow" href="#section7">Team</a></li>
+                                <li><a class="waves-effect waves-yellow" href="#section8">Contact</a></li>
+                            </ul>
+                        </div>
+                        <a href="#!" data-activates="slide-out" class="button-collapse right"><i class="mdi-navigation-menu"></i></a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Target section 1 -->
+            <div id="pull-parallax" class="parallax-container scrollspy">
+                <span class="overlay"></span>
+                <div class="parallax">
+                    <img class="" src="images/slide-1.jpg" />
+
+                    <div class="caption-slider topLevel">
+                        <div class="middle-pos">
+                            <span>Hello</span>
+                            <h1>
+                                 we are caliber
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="caption-slider">
+                        <div class="middle-pos">
+                            <span>Hello</span>
+                            <h1>
+                                 we are caliber
+                            </h1>
+                        </div>
+                    </div>
+
+                </div>
+                <span class="overlay-yellow"></span>
+            </div>
+
+            <div class="skew-wrpd">
+                <div class="bottomleft-skew"></div>
+                <div class="bottomright-skew"></div>
+            </div>
+
+        </header>
+
+
+        <!-- section 2 start here -->
+        <section id="section2" class="container scrollspy">
+            <div class="row">
+                <div class="col xs12 s6 m6 l6">
+                    <div class="bottom-line">
+                        <h2 class="title-h4">Made for you</h2>
+                        <span class="line"><em></em></span>
+                    </div>
+                    <div class="description">
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here
+                        </p>
+                        <p>
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+                        </p>
+                    </div>
+
+                    <div class="ca-btn">
+                        <a class="btn yellow waves-effect" href="#!">Know More</a>
+                    </div>
+                </div>
+                <div class="col xs12 s6 m6 l6">
+                    <div class="ca-video">
+                        <!-- <video width="100%" poster="images/video-poster.jpg" src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" controls></video> -->
+
+                        <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="100%" height="430" poster="images/video-poster.jpg" data-setup='{"example_option":true}'>
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- section 3 start here -->
+        <div id="section3" class="skew-wrp top scrollspy">
+            
+            <div class="skew-wrpd">
+                <div class="topleft-skew"></div>
+                <div class="topright-skew"></div>
+            </div>
+
+            <!-- <svg id="topShape" width="100%" height="90px" viewBox="0 0 1366 90" preserveAspectRatio="none">
+                <path style="fill:#fec107; stroke:none; stroke-width:0.88608021px;"
+                        d="M 1366,86.451775 0.166765,86.048945 400.78528,0.646955 z"
+                        id="path3185"
+               inkscape:connector-curvature="0" />
+            </svg> -->
+
+            <div class="primaryBg text-white">
+                <section class="container pad-gutter section-3">
+                    <div class="row">
+                        <div class="col s12 m12 l6">
+                            <div class="bottom-line">
+                                <h2 class="title-h4">Art of the work</h2>
+                                <span class="line"><em></em></span>
+                            </div>
+
+                            <ul class="ca-list-section-3">
+                                <li>
+                                    <div class="col xs12 s2 m2 l2">
+                                        <h3 class="icon-m"><i class="fa fa-desktop"></i></h3>
+                                    </div>
+                                    <div class="col xs12 s10 m10 l10">
+                                        <h4 class="uppercase title-5">Web Design</h4>
+                                        <p>
+                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="col xs12 s2 m2 l2">
+                                        <h3 class="icon-m"><i class="fa fa-camera"></i></h3>
+                                    </div>
+                                    <div class="col xs12 s10 m10 l10">
+                                        <h4 class="uppercase title-5">Photography</h4>
+                                        <p>
+                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="col xs12 s2 m2 l2">
+                                        <h3 class="icon-m"><i class="fa fa-paint-brush"></i></h3>
+                                    </div>
+                                    <div class="col xs12 s10 m10 l10">
+                                        <h4 class="uppercase title-5">Photoshop</h4>
+                                        <p>
+                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="skew-wrpd">
+                <div class="bottomleft-skew"></div>
+                <div class="bottomright-skew"></div>
+            </div>
+
+            <!-- <svg id="bottomShape" width="100%" height="90px" viewBox="0 0 1366 90" preserveAspectRatio="none">
+                <path style="fill:#fec107; stroke:none; stroke-width:0.88608021px;"
+                        d="M 1366,0.646955 0.166765,1.049795 800.78529,86.451775 z"
+                        id="path3185"
+               inkscape:connector-curvature="0" />
+            </svg> -->
+
+        </div>
+
+
+
+        <!-- section 4 start here-->
+        <div id="section4" class="row scrollspy">
+            <article class="container ca-blogs">
+                <div class="title-center">
+                    <div class="bottom-line">
+                        <h2 class="title-h4">Latest Blogs</h2>
+                        <span class="line"><em></em></span>
+                    </div>
+                </div>
+
+                <div class="overhide">
+                    <div class="description col xs12 s12 m6 offset-m6 l6 offset-l3">
+                        <p class="center-align">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- modal from section 2 -->
+                <div class="row gutter-bottom">
+                    <div class="col xs12 s6 m6 l6">
+                        <div class="">
+                            <a href="#!"><img class="responsive-img materialboxed" data-caption="Blog posted by John" src="images/blog-1.jpg" /></a>
+                        </div>
+                    </div>
+
+                    <div class="col xs12 s6 m6 l6">
+
+                        <div>
+                            <label class="primaryColor">
+                                August 25th 2015
+                            </label>
+                            <h5 class="uppercase title-6">40 kilobytes? Are you kidding?</h5>
+                        </div>
+                        <div>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here
+                            </p>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33.
+                            </p>
+                        </div>
+
+                        <div class="ca-btn">
+                            <a class="btn yellow waves-effect" href="#!">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- modal from section 2 -->
+                <div class="row">
+
+                    <div class="col xs12 s6 m6 l6">
+
+                        <div>
+                            <label class="primaryColor">
+                                August 25th 2015
+                            </label>
+                            <h5 class="uppercase title-6">40 kilobytes? Are you kidding?</h5>
+                        </div>
+                        <div>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here
+                            </p>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33.
+                            </p>
+                        </div>
+
+                        <div class="ca-btn">
+                            <a class="btn yellow waves-effect" href="#!">Know More</a>
+                        </div>
+                    </div>
+
+                    <div class="col xs12 s6 m6 l6">
+                        <div class="">
+                            <a href="#!"><img class="responsive-img materialboxed" data-caption="Blog posted by John" src="images/blog-2.jpg" /></a>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </div>
+
+
+        <!-- section-5 start here -->
+        <div id="section5" class="row scrollspy">
+            <section class="row overhide skew-wrp top">
+
+                <div class="skew-wrpd">
+                    <div class="topleft-skew"></div>
+                    <div class="topright-skew"></div>
+                </div>
+
+                <div id="ca-blog-parallax" class="parallax-container">
+                    <span class="overlay"></span>
+                    <div class="parallax">
+                        <img class="" src="images/slider-5.jpg" />
+
+                        <!-- owl carousel start here -->
+                        <div class="ca-carousel-wrapper">
+                            <div class="owl-carousel">
+                                <div class="item">
+                                    <div class="center-align"><h3><i class="fa fa-twitter ca-icon-circle"></i></h3></div>
+                                    <div class="owl-body">
+                                        <h5 class="owl-message">
+                                            It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+                                        </h5>
+                                        <div class="owl-footer">
+                                            <h5 class="text-white post-author">@ Inkoniq Development</h5>
+                                            <label class="post-date">2 Days left</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="center-align"><h3><i class="fa fa-twitter ca-icon-circle"></i></h3></div>
+                                    <div class="owl-body">
+                                        <h5 class="owl-message">
+                                            It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+                                        </h5>
+                                        <div class="owl-footer">
+                                            <h5 class="text-white post-author">@ Wbsrini</h5>
+                                            <label class="post-date">1 Day left</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="center-align"><h3><i class="fa fa-twitter ca-icon-circle"></i></h3></div>
+                                    <div class="owl-body">
+                                        <h5 class="owl-message">
+                                            It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+                                        </h5>
+                                        <div class="owl-footer">
+                                            <h5 class="text-white post-author">@ Threejs</h5>
+                                            <label class="post-date">12 Days left</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- owl carousel end here -->
+
+                    </div>
+                </div>
+
+                <div class="skew-wrpd">
+                    <div class="bottomleft-skew"></div>
+                    <div class="bottomright-skew"></div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- section-6 start here ( Best seller )-->
+        <div id="section6" class="row scrollspy">
+            <article class="container ca-blogs">
+                <div class="title-center">
+                    <div class="bottom-line">
+                        <h2 class="title-h4">Futured Projects</h2>
+                        <span class="line"><em></em></span>
+                    </div>
+                </div>
+
+                <div class="overhide">
+                    <div class="description col xs12 s12 offset-s0 m8 offset-m2 l6 offset-l3">
+                        <p class="center-align">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                        </p>
+                    </div>
+                </div>
+
+                <aside class="row">
+                    <ul class="overhide ca-bestseller best-Seller">
+                        <li class="col xs12 s4 m4 l4">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <a href="#!" class="show"><img class="responsive-img" src="images/best-seller-1.jpg"></a>
+                                    <span class="bs-priceTag"><a class="white-text" href="#!">Best Sellers</a></span>
+                                </div>
+                                <div class="card-content primaryBg">
+                                    <span class="bs-priceTag"><a class="white-text" href="#!">$ 124.55</a></span>
+                                    <a href="#!" class="show"><span class="card-title">Philips Flying</span></a>
+                                    <div>
+                                        <a href="#!"><i class="fa fa-star yellow-text text-darken-1"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text text-darken-1"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text text-darken-1"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text white-text"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text white-text"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col xs12 s4 m4 l4">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <a href="#!" class="show"><img class="responsive-img" src="images/best-seller-2.jpg"></a>
+                                </div>
+                                <div class="card-content primaryBg">
+                                    <span class="bs-priceTag"><a class="white-text" href="#!">$ 124.55</a></span>
+                                    <a href="#!" class="show"><span class="card-title">LED Desktop</span></a>
+                                    <div>
+                                        <a href="#!"><i class="fa fa-star yellow-text text-darken-1"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text text-darken-1"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text text-darken-1"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text white-text"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text white-text"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col xs12 s4 m4 l4">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <a href="#!" class="show"><img class="responsive-img" src="images/best-seller-3.jpg"></a>
+                                    <span class="bs-priceTag"><a class="white-text" href="#!">Best Sellers</a></span>
+                                </div>
+                                <div class="card-content primaryBg">
+                                    <span class="bs-priceTag"><a class="white-text" href="#!">$ 124.55</a></span>
+                                    <a href="#!" class="show"><span class="card-title">Sport Shoes</span></a>
+                                    <div>
+                                        <a href="#!"><i class="fa fa-star yellow-text text-darken-1"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text text-darken-1"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text text-darken-1"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text white-text"></i></a>
+                                        <a href="#!"><i class="fa fa-star yellow-text white-text"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+
+            </article>
+        </div>
+
+
+
+        <!-- section 7 start here -->
+        <div id="section7" class="row scrollspy">
+            <section class="row overhide skew-wrp top">
+
+                <div class="skew-wrpd">
+                    <div class="topleft-skew"></div>
+                    <div class="topright-skew"></div>
+                </div>
+
+                <div class="ca-wwh">
+                    <span class="overlay"></span>
+                    <aside class="container">
+                        <ul class="overhide ca-bestseller pad-gutter row">
+                            <li class="col xs12 s4 m4 l4">
+                                <div class="card hoverable center-align">
+                                    <div class="card-image primaryBg overhide">
+                                        <h2 class="secondaryColor bold uppercase bold-700">What?</h2>
+                                    </div>
+                                    <div class="card-content secondaryBg">
+                                        <div class="white-text">
+                                            <h4 class="uppercase bold-600">Attractive Style</h4>
+                                            <p class="description">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.
+                                            </p>
+                                        </div>
+                                        <div class="pullBown-btn">
+                                            <a class="btn yellow uppercase waves-effect secondaryColor bold-600" href="#!">Know More</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li class="col xs12 s4 m4 l4">
+                                <div class="card hoverable center-align">
+                                    <div class="card-image primaryBg overhide">
+                                        <h2 class="secondaryColor bold uppercase bold-700">Why?</h2>
+                                    </div>
+                                    <div class="card-content secondaryBg">
+                                        <div class="white-text">
+                                            <h4 class="uppercase bold-600">Elegent Look</h4>
+                                            <p class="description">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.
+                                            </p>
+                                        </div>
+                                        <div class="pullBown-btn">
+                                            <a class="btn yellow uppercase waves-effect secondaryColor bold-600" href="#!">Know More</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li class="col xs12 s4 m4 l4">
+                                <div class="card hoverable center-align">
+                                    <div class="card-image primaryBg overhide">
+                                        <h2 class="secondaryColor bold uppercase bold-700">How?</h2>
+                                    </div>
+                                    <div class="card-content secondaryBg">
+                                        <div class="white-text">
+                                            <h4 class="uppercase bold-600">Being Creative</h4>
+                                            <p class="description">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.
+                                            </p>
+                                        </div>
+                                        <div class="pullBown-btn">
+                                            <a class="btn yellow uppercase waves-effect secondaryColor bold-600" href="#!">Know More</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="skew-wrpd">
+                    <div class="bottomleft-skew"></div>
+                    <div class="bottomright-skew"></div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- section-8 start here ( Best seller )-->
+        <div id="section8" class="row scrollspy">
+            <section class="container ca-blogs">
+                <div class="title-center">
+                    <div class="bottom-line">
+                        <h2 class="title-h4">Our Gallery</h2>
+                        <span class="line"><em></em></span>
+                    </div>
+                </div>
+
+                <div class="overhide">
+                    <div class="description col xs12 s12 offset-s0 m8 offset-m2 l6 offset-l3">
+                        <p class="center-align">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                        </p>
+                    </div>
+                </div>
+
+                <article class="gallery-filter">
+                    <div class="button-group filters-button-group center-align">
+                          <button class="button waves-effect btn yellow is-checked" data-filter="*">show all</button>
+                          <button class="button waves-effect btn" data-filter=".filter-dev">Development</button>
+                          <button class="button waves-effect btn" data-filter=".filter-photo">Photography</button>
+                          <button class="button waves-effect btn" data-filter=".filter-design">Design</button>
+                          <button class="button waves-effect btn" data-filter=".filter-brand">Branding</button>
+                    </div>
+                    <ul class="grid js-isotope">
+                        <li class="grid-item filter-dev" data-category="filter-dev" >
+                            <a href="#!"><img class="responsive-img" src="images/grid-2.jpg" /></a>
+                        </li>
+                        <li class="grid-item filter-photo" data-category="filter-photo" >
+                            <a href="#!"><img class="responsive-img" src="images/grid-1.jpg" /></a>
+                        </li>
+                        <li class="grid-item filter-design" data-category="filter-design" >
+                            <a href="#!"><img class="responsive-img" src="images/grid-3.jpg" /></a>
+                        </li>
+                        <li class="grid-item filter-brand" data-category="filter-brand" >
+                            <a href="#!"><img class="responsive-img" src="images/grid-4.jpg" /></a>
+                        </li>
+                        <li class="grid-item filter-dev" data-category="filter-dev" >
+                            <a href="#!"><img class="responsive-img" src="images/grid-5.jpg" /></a>
+                        </li>
+                        <li class="grid-item filter-photo" data-category="filter-photo" >
+                            <a href="#!"><img class="responsive-img" src="images/grid-6.jpg" /></a>
+                        </li>
+                        <li class="grid-item filter-design" data-category="filter-design" >
+                            <a href="#!"><img class="responsive-img" src="images/grid-7.jpg" /></a>
+                        </li>
+                        <li class="grid-item filter-brand" data-category="filter-brand" >
+                            <a href="#!"><img class="responsive-img" src="images/grid-8.jpg" /></a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+
+        <!-- section 9 start here -->
+        <div id="section9" class="row scrollspy blackSkew">
+            <section class="row overhide skew-wrp top">
+
+                <div class="skew-wrpd">
+                    <div class="topleft-skew"></div>
+                    <div class="topright-skew"></div>
+                </div>
+
+                <div class="connect-wrp">
+                    <span class="overlay"></span>
+                    <aside class="container  white-text">
+                        <div class="overhide ca-contactForm pad-gutter row">
+                            <div class="title-center">
+                                <div class="bottom-line">
+                                    <h2 class="title-h4 white-text">Connect with us</h2>
+                                    <span class="line"><em></em></span>
+                                </div>
+                            </div>
+
+                            <div class="overhide">
+                                <div class="description col xs12 s12 offset-s0 m8 offset-m2 l6 offset-l3">
+                                    <p class="center-align">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="overhide">
+                                <div class="col xs12 m6 s6 l6">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="name" type="text" class="validate">
+                                            <label for="name">Name*</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="email" type="email" class="validate">
+                                            <label for="email">Email*</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="tel" type="tel" class="validate">
+                                            <label for="tel">Phone number</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                            <label for="textarea1">Textarea</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <button type="button" class="btn btn-large yellow uppercase bold-600 col s12 waves-effect">Get started now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col xs12 m6 s6 l6">
+                                    <div class="col s12 detailCeo">
+                                        <div class="col xs12 m5 s5 l5">
+                                            <a href="#!"><img class="responsive-img" src="images/cm.jpg" /></a>
+                                        </div>
+                                        <div class="col xs12 m7 s7 l7">
+                                            <div class="author">John Deo</div>
+                                            <p class="uppercase">President</p>
+                                            <div class=""><a class="white-text" href="mailto:johndeo@gmail.com">
+                                            <span>Mail: </span>johndeo@gmail.com</a></div>
+                                            <div class="text-white"><a class="white-text" href="tel:9876543210">
+                                            <span>Tel: </span>9876543210</a></div>
+                                            <div class="ca-socialConnection">
+                                                <a class="primaryColor" href="#!"><i class="fa fa-facebook"></i></a>
+                                                <a class="primaryColor" href="#!"><i class="fa fa-twitter"></i></a>
+                                                <a class="primaryColor" href="#!"><i class="fa fa-google-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 detailCeo">
+                                        <div class="col xs12 m5 s5 l5">
+                                            <a href="#!"><img class="responsive-img" src="images/ceo.jpg" /></a>
+                                        </div>
+                                        <div class="col xs12 m7 s7 l7">
+                                            <div class="author">Sam Arthur</div>
+                                            <p class="uppercase">Ceo</p>
+                                            <div class=""><a class="white-text" href="mailto:sam@gmail.com">
+                                            <span>Mail: </span>sam@gmail.com</a></div>
+                                            <div class="text-white"><a class="white-text" href="tel:9876543210">
+                                            <span>Tel: </span>9876543211</a></div>
+                                            <div class="ca-socialConnection">
+                                                <a class="primaryColor" href="#!"><i class="fa fa-facebook"></i></a>
+                                                <a class="primaryColor" href="#!"><i class="fa fa-twitter"></i></a>
+                                                <a class="primaryColor" href="#!"><i class="fa fa-google-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="skew-wrpd black-skew">
+                    <div class="bottomleft-skew "></div>
+                    <div class="bottomright-skew "></div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- section 10 start here -->
+        <section class="secondaryBg">
+            <div class="container overhide footer-Qk">
+                <div class="row">
+                    <div class="col xs12 s4 m4 l4">
+                        <div class="bottom-line footer brand">
+                            <a href="index.html"><div class="footer-title primaryColor">Caliber</div></a>
+                            <span class="line"><em></em></span>
+                        </div>
+                        <div class=" text-lighten">
+                            <p class="">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
+                            </p>
+                            <p class="">
+                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col xs12 s4 m4 l4">
+                        <div class="bottom-line footer">
+                            <div class="footer-title">Twitter</div>
+                            <span class="line"><em></em></span>
+                        </div>
+
+                        <div class="text-lighten">
+                            <ul class="tweet-list">
+                                <li class="row">
+                                    <div class="col xs1 s1 m1 l1"><i class="fa fa-twitter"></i></div>
+                                    <div class="col xs11 s11 m11 l11">
+                                        <a class="right" href="#!">
+                                            #Design Mangatar® http://cssnectar.com/css-gallery-inspiration/mangatar/
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="row">
+                                    <div class="col xs1 s1 m1 l1"><i class="fa fa-twitter"></i></div>
+                                    <div class="col xs11 s11 m11 l11">
+                                        <a class="right" href="#!">
+                                            #Design Mangatar® http://cssnectar.com/css-gallery-inspiration/mangatar/
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="row">
+                                    <div class="col xs1 s1 m1 l1"><i class="fa fa-twitter"></i></div>
+                                    <div class="col xs11 s11 m11 l11">
+                                        <a class="right" href="#!">
+                                            #Design Mangatar® http://cssnectar.com/css-gallery-inspiration/mangatar/
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col xs12 s4 m4 l4">
+                        <div class="bottom-line footer">
+                            <div class="footer-title">Flicker</div>
+                            <span class="line"><em></em></span>
+                        </div>
+
+                        <ul class="row ca-flicker-list">
+                            <li class="col xs4 s4 m4 l3"><a href="#!"><img class="responsive-img" src="images/grid-1.jpg" /></a></li>
+                            <li class="col xs4 s4 m4 l3"><a href="#!"><img class="responsive-img" src="images/grid-2.jpg" /></a></li>
+                            <li class="col xs4 s4 m4 l3"><a href="#!"><img class="responsive-img" src="images/grid-3.jpg" /></a></li>
+                            <li class="col xs4 s4 m4 l3"><a href="#!"><img class="responsive-img" src="images/grid-4.jpg" /></a></li>
+                            <li class="col xs4 s4 m4 l3"><a href="#!"><img class="responsive-img" src="images/grid-5.jpg" /></a></li>
+                            <li class="col xs4 s4 m4 l3"><a href="#!"><img class="responsive-img" src="images/grid-6.jpg" /></a></li>
+                            <li class="col xs4 s4 m4 l3"><a href="#!"><img class="responsive-img" src="images/grid-7.jpg" /></a></li>
+                            <li class="col xs4 s4 m4 l3"><a href="#!"><img class="responsive-img" src="images/grid-8.jpg" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="page-footer black">
+            <div class="footer-copyright">
+                <div class="container grey-text text-lighten-1">
+                    © 2015 Copyright Caliber
+                    <span class="right footer-social-icon">
+                        <a class="grey-text text-lighten-1" href="#!"><i class="fa fa-facebook"></i></a>
+                        <a class="grey-text text-lighten-1" href="#!"><i class="fa fa-twitter"></i></a>
+                        <a class="grey-text text-lighten-1" href="#!"><i class="fa fa-google-plus"></i></a>
+                        <a class="grey-text text-lighten-1" href="#!"><i class="fa fa-dribbble"></i></a>
+                        <a class="grey-text text-lighten-1" href="#!"><i class="fa fa-youtube"></i></a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- <div style="height: 500px;"></div> -->
+
+        
+    </main>
+
+
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/isotope.pkgd.min.js"></script>
+    <script src="javascripts/owl.carousel.js"></script>
+    <script src="javascripts/materialize.js"></script>
+    <script src="javascripts/video.js"></script>
+    <script src="javascripts/jquery.nicescroll.js"></script>
+    
+    <script src="javascripts/ca-main.js"></script>
+    
+    <script>
+        videojs.options.flash.swf = "javascripts/video-js.swf"
+    </script>
+
+
+
+    <script src="javascripts/queryLoader.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            setTimeout(function(){
+                $("#depreload .wrapper").animate({ opacity: 1 });
+            }, 400);
+
+            setTimeout(function(){
+                $("#depreload .logo").animate({ opacity: 1 });
+            }, 800);
+
+            var canvas  = $("#depreload .line")[0],
+                context = canvas.getContext("2d");
+
+            context.beginPath();
+            context.arc(180, 180, 160, Math.PI * 1.5, Math.PI * 1.6);
+            context.strokeStyle = '#fec107';
+            context.lineWidth = 5;
+            context.stroke();
+
+            var loader = $("body").DEPreLoad({
+                OnStep: function(percent) {
+                    console.log(percent + '%');
+
+                    $(".process-val").text(percent + "%");
+
+                    $("#depreload .line").animate({ opacity: 1 });
+                    $("#depreload .perc").text(percent + "%");
+
+                    if (percent > 5) {
+                        context.clearRect(0, 0, canvas.width, canvas.height);
+                        context.beginPath();
+                        context.arc(180, 180, 160, Math.PI * 1.5, Math.PI * (1.5 + percent / 50), false);
+                        context.stroke();
+                    }
+                },
+                OnComplete: function() {
+                    console.log('Everything loaded!');
+                    $("#depreload .perc").text("done");
+                    $("#depreload .loading").animate({ opacity: 0 }); 
+                    $("#depreload").fadeOut(1000);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
